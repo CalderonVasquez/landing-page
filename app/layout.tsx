@@ -14,9 +14,27 @@ export default function RootLayout({
   children: React.ReactNode
   }) {
   
+  const header = (
+    <header>
+      <div>
+        <h1>Welcome to my landing page</h1>
+      </div>
+    </header>
+  )
+
+  const footer = ( 
+    <footer>
+      <div>
+        <p>Developed by Eric</p>
+      </div>
+    </footer>
+  )
+  
   return (
     <html lang="en">
+      {header}
       <body className={inter.className}>{children}</body>
+      {footer}
     </html>
   )
 }
